@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WORD SWAPPER</title>
+  <link rel="icon" href="./favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>WORD SWAPPER</h1>
+    <div class="tag">Replace words across the whole text · <b>1 click</b></div>
+    <p>Paste text, enter a word, and choose a replacement</p>
+
+    <section class="panel">
+      <label class="label" for="sourceText">Text</label>
+      <textarea id="sourceText" class="field textarea" placeholder="Paste your text here..."></textarea>
+
+      <div class="grid">
+        <div>
+          <label class="label" for="fromWord">Find</label>
+          <input id="fromWord" class="field" type="text" placeholder="e.g. cat" />
+        </div>
+        <div>
+          <label class="label" for="toWord">Replace with</label>
+          <input id="toWord" class="field" type="text" placeholder="e.g. dog" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-accent" id="replaceBtn">Replace all</button>
+        <button class="btn" id="clearBtn">Clear</button>
+      </div>
+
+      <p id="msg" role="status">Ready to replace</p>
+    </section>
+
+    <section class="panel">
+      <label class="label" for="resultText">Result</label>
+      <textarea id="resultText" class="field textarea" readonly placeholder="The modified text will appear here..."></textarea>
+    </section>
+
+    <footer class="footer" aria-label="Project credits">
+      <div class="credit">
+        <span class="credit-label">Made by</span>
+        <a class="author" href="https://xar3s.ru/">Xar3S</a>
+        <span class="dot">•</span>
+        <span class="year">2026</span>
+      </div>
+
+      <a class="repo" href="https://github.com/x4r3s/word-swapper">
+        <img class="icon" src="./github.svg" alt="" aria-hidden="true" />
+        <span>View repository</span>
+      </a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
